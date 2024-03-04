@@ -6,7 +6,7 @@
 
 #game {
   position: absolute;
-  top: 0;
+  top: 24%;
   left: 50%;
   translate: -50%;
   display: grid;
@@ -20,7 +20,7 @@ img {
 
 h2 {
   font-size: 3rem;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
 }
 
 .name1 {

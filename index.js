@@ -138,6 +138,8 @@ async function hitMe() {
             document.querySelector("#d2").classList.remove("hide");
             updateScore("dealer");
             displayPlayerWinLose("lose");
+            await delay(2000);
+            location.reload();
         }
     }
 }

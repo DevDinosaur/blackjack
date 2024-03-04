@@ -122,6 +122,59 @@ footer {
   font-family: 'Indie Flower', cursive;
 }
 
+/* Apply styles for screens smaller than 675px */
+@media screen and (max-width: 675px) {
+  /* CSS styles for larger screens */
+
+  .container {
+    width: 90%;
+  }
+  
+  img {
+    height: 100px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .dealer-cards, .player-cards {
+    grid-template-columns: repeat(auto-fill, minmax(5px, 1fr));
+  }
+  
+  #nameInput {
+    height: 30px;
+  }
+  
+  #playButton {
+    background-color: #003c28;
+    color: white;
+    font-weight: bold;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  
+  .game-btn {
+    font-size: 1rem;
+  }
+  
+  #win-lose {
+    position: absolute;
+    top: 290px;
+    max-width: 100px;
+  }
+  
+  body {
+    background-color: #003c28;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+}
+
+
 .hide {
   visibility: hidden !important;
 }

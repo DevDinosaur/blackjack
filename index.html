@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="start" class="container">
+      <h1>Let's Play Blackjack!</h1>
+      <input type="text" id="nameInput">
+      <button id="playButton">PLAY!</button>
+    </div>
+
+    <div id="game" class="container hide">
+      <h2 class="name1">Dealer</h2>
+      <h2 class="name2">Player</h2>
+
+      <div class="dealer-cards">
+        <img id="d1" class="" src="images/ace_of_clubs.png" />
+        <img id="d2" class="" src="images/card back red.png" />
+        <img id="d3" class="hide" src="images/card back red.png" />
+        <img id="d4" class="hide" src="images/card back red.png" />
+        <img id="d5" class="hide" src="images/card back red.png" />
+        <img id="d6" class="hide" src="images/card back red.png" />
+      </div>
+      
+      <div class="player-cards">
+        <img id="p1" class="" src="images/ace_of_clubs.png" />
+        <img id="p2" class="" src="images/card back red.png" />
+        <img id="p3" class="hide" src="images/card back red.png" />
+        <img id="p4" class="hide" src="images/card back red.png" />
+        <img id="p5" class="hide" src="images/card back red.png" />
+        <img id="p6" class="hide" src="images/card back red.png" />
+      </div>
+
+      <h3 id="dealer-score">0</h3>
+      <h3 id="player-score">0</h3>
+
+      <button id="hit" class="game-btn">HIT</button>
+      <button id="stand" class="game-btn">STAND</button>
+
+    </div> 
+
+    <img id="win-lose" class="hide" src="images/trophy.png" alt="trophy">
+
+  <script src="index.js"></script>
+  </body>
+</html>

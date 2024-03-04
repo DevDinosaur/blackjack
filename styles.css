@@ -1,0 +1,127 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+#game {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 2fr auto auto;
+}
+
+img {
+  height: 200px;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
+
+.name1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: green;
+}
+
+.name2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: cyan;
+}
+
+.dealer-cards {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  grid-gap: 10px;
+}
+
+.player-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  grid-gap: 10px;
+}
+
+#nameInput {
+  height: 30px;
+  ;
+}
+
+#playButton {
+  background-color: #003c28;
+  color: white;
+  font-weight: bold;
+  height: 36px;
+  font-size: 1.1rem;
+}
+
+.game-btn {
+  width: max-content;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#hit {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  background-color: red;
+}
+
+#stand {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  background-color: yellow;
+}
+
+#win-lose {
+  position: absolute;
+  margin: auto;
+  top: 150px;
+  left: 45%;
+  translate: -50%;
+  max-width: 150px;
+  height: auto;
+}
+
+body {
+  background-color: #003c28;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 2rem;
+  color: orange;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.hide {
+  visibility: hidden !important;
+}
